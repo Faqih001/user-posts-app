@@ -42,6 +42,7 @@ const UserList: React.FC = () => {
       }
     };
 
+    // Call function to fetch users and posts
     fetchUsersAndPosts();
   }, []);
 
