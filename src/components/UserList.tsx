@@ -11,6 +11,7 @@ type Post = {
   userId: number;
 };
 
+// Define UserList component
 const UserList: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [posts, setPosts] = useState<Post[]>([]);
