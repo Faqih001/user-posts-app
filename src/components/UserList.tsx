@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
+// Define types for User and Post data
 type User = {
   id: number;
   name: string;
 };
 
+// Define types for User and Post data
 type Post = {
   userId: number;
 };
