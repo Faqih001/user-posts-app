@@ -27,6 +27,7 @@ const UserList: React.FC = () => {
           fetch('https://jsonplaceholder.typicode.com/posts'),
         ]);
 
+        // Parse response data
         const usersData = await usersResponse.json();
         const postsData = await postsResponse.json();
 
