@@ -22,6 +22,7 @@ const UserList: React.FC = () => {
     // Fetch users and posts
     const fetchUsersAndPosts = async () => {
       try {
+        // Fetch users and posts from API endpoints in parallel using Promise.all 
         const [usersResponse, postsResponse] = await Promise.all([
           fetch('https://jsonplaceholder.typicode.com/users'),
           fetch('https://jsonplaceholder.typicode.com/posts'),
