@@ -62,7 +62,7 @@ const UserList: React.FC = () => {
       <ul>
         {users.map(user => (
           <li key={user.id}>
-            {user.name} - Number of Posts they have made: {getPostCount(user.id)}
+            Name of the user: {user.name} - Number of Posts they have made: {getPostCount(user.id)}
           </li>
         ))}
       </ul>
