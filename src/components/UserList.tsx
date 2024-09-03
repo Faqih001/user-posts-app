@@ -51,6 +51,7 @@ const UserList: React.FC = () => {
     return posts.filter(post => post.userId === userId).length;
   };
 
+  // Render user list if data is available
   if (loading) {
     return <div>Loading...</div>;
   }
