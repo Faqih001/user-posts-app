@@ -17,6 +17,7 @@ const UserList: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
 
+  // Fetch users and posts on component mount and update state with data when available 
   useEffect(() => {
     // Fetch users and posts
     const fetchUsersAndPosts = async () => {
