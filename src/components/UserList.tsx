@@ -32,6 +32,7 @@ const UserList: React.FC = () => {
         const usersData = await usersResponse.json();
         const postsData = await postsResponse.json();
 
+        // Set state with data from both endpoints in parallel using Promise.all
         setUsers(usersData);
         setPosts(postsData);
         setLoading(false);
